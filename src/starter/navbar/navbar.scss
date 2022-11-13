@@ -1,0 +1,15 @@
+nav {
+  padding-block: 1.25rem;
+  .logo {
+    width: 9.063rem;
+  }
+  ul {
+    column-gap: 1rem;
+  }
+  @media screen and (min-width: 1024px) {
+    padding-block: 2.5rem;
+    ul {
+      column-gap: 3.562rem;
+    }
+  }
+}

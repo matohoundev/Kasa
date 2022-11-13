@@ -1,25 +1,27 @@
-import logo from "./logo.svg";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import "./App.scss";
+import { Route, Routes } from "react-router-dom";
+import React, { Fragment, useEffect, useState } from "react";
+import NavBar from "./starter/navbar/NavBar";
+import Footer from "./starter/footer/Footer";
+import Main from "./pages/home/Main";
+import About from "./pages/about/About";
+import Accomodation from "./pages/Sheet/Accommodation/Accommodation";
+import NotFound from "./pages/404/NotFound";
+// import "../App.scss";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div className="wrapper">
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/accomodation" element={<Accomodation />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
+      <Footer />
+    </Fragment>
   );
 }
 

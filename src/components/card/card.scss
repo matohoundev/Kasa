@@ -1,0 +1,25 @@
+.card {
+  width: 100%;
+  position: relative;
+
+  &__content {
+    top: 80%;
+    padding-bottom: 5.3%;
+    padding-inline: 1.25rem;
+    border-radius: 0 0 $rounded $rounded;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 340px;
+    height: 340px;
+    &__content {
+      top: 86%;
+      padding-bottom: 5.3%;
+    }
+  }
+}
