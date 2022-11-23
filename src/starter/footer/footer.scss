@@ -1,6 +1,8 @@
 footer {
+  height: 18vh;
   padding-block: 1rem;
   @media screen and (min-width: 1024px) {
+    height: 22vh;
     padding-block: 2.5rem;
   }
 }

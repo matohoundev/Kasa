@@ -4,7 +4,7 @@ import NavBar from "./starter/navbar/NavBar";
 import Footer from "./starter/footer/Footer";
 import Main from "./pages/home/Main";
 import About from "./pages/about/About";
-import Accomodation from "./pages/Sheet/Accommodation/Accommodation";
+import Accommodation from "./pages/Sheet/Accommodation/Accommodation";
 import NotFound from "./pages/404/NotFound";
 // import "../App.scss";
 
@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/about" element={<About />} />
-          <Route path="/accomodation" element={<Accomodation />} />
+          <Route path="/accommodation" element={<Accommodation />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

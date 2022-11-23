@@ -1,0 +1,14 @@
+.about {
+  row-gap: 1.35rem;
+  margin-bottom: 1.35rem;
+  @media screen and (min-width: 1024px) {
+    row-gap: 2.65rem;
+    margin-bottom: 2.6875rem;
+  }
+  .box-collapse {
+    row-gap: 1.35rem;
+    @media screen and (min-width: 1024px) {
+      padding-inline: 10vw;
+    }
+  }
+}

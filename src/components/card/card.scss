@@ -3,7 +3,8 @@
   position: relative;
 
   &__content {
-    top: 80%;
+    position: absolute;
+    bottom: 0;
     padding-bottom: 5.3%;
     padding-inline: 1.25rem;
     border-radius: 0 0 $rounded $rounded;
@@ -15,11 +16,13 @@
   }
 
   @media screen and (min-width: 1024px) {
-    width: 340px;
-    height: 340px;
+    width: 30%;
+    height: 30%;
+    aspect-ratio: 1/1;
+    margin: 0 1% 3% 2%;
     &__content {
-      top: 86%;
       padding-bottom: 5.3%;
+      bottom: 3px;
     }
   }
 }

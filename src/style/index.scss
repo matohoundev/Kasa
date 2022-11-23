@@ -10,9 +10,10 @@
 @import "../pages/Sheet/Accommodation/accommodation";
 // components-kit
 @import "../components/card/card";
-// @import "../components/collapse/collapse";
-// @import "../components/gallery/gallery";
-// @import "../components/tag/tag";
+@import "../components/banner/banner";
+@import "../components/collapse/collapse";
+@import "../components/gallery/gallery";
+@import "../components/tag/tag";
 
 /* reset */
 
@@ -24,6 +25,7 @@ html {
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -54,10 +56,15 @@ ul {
 // Size page settings
 
 .wrapper {
+  width: 100%;
   padding-inline: 4.5vw;
   // responsive
   @media screen and (min-width: 1024px) {
     padding-inline: 10vw;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-inline: 0;
+    max-width: 1200px;
   }
 }
 
@@ -118,6 +125,10 @@ ul {
 }
 
 // font weight
+
+.font-light {
+  font-weight: 300;
+}
 
 .font-normal {
   font-weight: 400;
@@ -226,6 +237,10 @@ ul {
 }
 
 // border radius
+
+.rounded-light {
+  border-radius: $radius;
+}
 
 .rounded {
   border-radius: $rounded;
@@ -767,6 +782,46 @@ ul {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+// opaque ou visible
+
+.opaque {
+  opacity: 0;
+}
+
+.opacity-25 {
+  opacity: 0.25;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-75 {
+  opacity: 0.75;
+}
+
+.visible {
+  opacity: 1;
+}
+
+// icons
+
+.fa-chevron-up {
+  transform: rotate(180deg);
+}
+
+.fa-chevron-down {
+  transform: rotate(0deg);
+}
+
+.fa-chevron-left {
+  transform: rotate(90deg);
+}
+
+.fa-chevron-right {
+  transform: rotate(-90deg);
 }
 
 // delete decoration

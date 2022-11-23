@@ -1,0 +1,14 @@
+.tag {
+  padding: 4px 30px;
+  @media screen and (min-width: 1024px) {
+    padding: 4px 40px;
+  }
+  p {
+    line-height: $line-height-max;
+    font-size: $text-xsss;
+    @media screen and (min-width: 1024px) {
+      top: -2px;
+      font-size: $text-sm;
+    }
+  }
+}
