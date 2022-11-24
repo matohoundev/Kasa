@@ -6,7 +6,6 @@ import Main from "./pages/home/Main";
 import About from "./pages/about/About";
 import Accommodation from "./pages/Sheet/Accommodation/Accommodation";
 import NotFound from "./pages/404/NotFound";
-// import "../App.scss";
 
 function App() {
   return (
