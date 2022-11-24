@@ -12,7 +12,6 @@
     }
   }
   &__body {
-    padding: 0 1.5rem;
     height: 0;
     transition: max-height 0.2s ease;
     &--open {
@@ -22,7 +21,6 @@
     }
   }
   &__text {
-    padding-top: 2rem;
     transition: opacity 0.3s ease-in-out;
     &--open {
       padding-top: 1.5rem;
@@ -30,5 +28,19 @@
       line-height: 142.6%;
       transition: opacity 0.3s ease-in-out;
     }
+  }
+  &__span {
+    transition: opacity 0.3s ease-in-out;
+    line-height: 142.6%;
+    &--open {
+      line-height: 142.6%;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+  span:first-child {
+    padding-top: 10px;
+  }
+  span:last-child {
+    padding-bottom: 10px;
   }
 }

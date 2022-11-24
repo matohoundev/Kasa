@@ -1,9 +1,9 @@
 import React from "react";
 
-const Tag = () => {
+const Tag = ({ name }) => {
   return (
     <div className="tag bg-main-color w-fit rounded">
-      <p className="text-white font-normal relative">Cozy</p>
+      <p className="text-white font-normal relative">{name}</p>
     </div>
   );
 };
