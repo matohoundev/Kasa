@@ -1,0 +1,19 @@
+.home {
+  row-gap: 1.35rem;
+  margin-bottom: 1.35rem;
+  @media screen and (min-width: 1024px) {
+    row-gap: 2.65rem;
+    margin-bottom: 2.6875rem;
+  }
+  .box-card {
+    border-radius: 25px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 1.25rem;
+    @media screen and (min-width: 1024px) {
+      padding: 3.5rem 3.5rem calc(3.5rem - 3%) 3.5rem;
+      background-color: $text-gray;
+    }
+  }
+}

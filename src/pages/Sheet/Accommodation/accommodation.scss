@@ -1,0 +1,88 @@
+.accommodation {
+  margin-bottom: 40px;
+  &__body {
+    margin-top: 10px;
+    .info {
+      margin-bottom: 12px;
+      @media screen and (min-width: 1024px) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+      }
+      &__header {
+        margin-bottom: 20px;
+        @media screen and (min-width: 1024px) {
+          margin-bottom: 0;
+        }
+        h1 {
+          @media screen and (min-width: 1024px) {
+            font-size: 36px;
+            line-height: 51.34px;
+          }
+        }
+        h2 {
+          @media screen and (min-width: 1024px) {
+            font-size: 18px;
+            line-height: 28px;
+          }
+        }
+        .box-tag {
+          margin-top: 11px;
+          @media screen and (min-width: 1024px) {
+            margin-top: 20px;
+          }
+        }
+      }
+      &__other {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (min-width: 1024px) {
+          flex-direction: column-reverse;
+        }
+        .box-star {
+          img {
+            width: 20px;
+            height: 20px;
+            @media screen and (min-width: 1024px) {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+        .box-host {
+          width: 50%;
+          justify-content: end;
+          column-gap: 10px;
+          @media screen and (min-width: 1024px) {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 20px;
+            align-items: center;
+          }
+          p {
+            width: min-content;
+          }
+          .photo {
+            background-color: gray;
+            width: 40px;
+            height: 100%;
+            border-radius: 100px;
+            @media screen and (min-width: 1024px) {
+              width: 50px;
+              height: 50px;
+            }
+          }
+        }
+      }
+    }
+    .contain-collapse {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      @media screen and (min-width: 1024px) {
+        flex-direction: row;
+        column-gap: 4.5rem;
+      }
+    }
+  }
+}
