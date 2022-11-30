@@ -1,20 +1,17 @@
-import React from "react";
-
 export default class ApiServices {
   constructor() {
-    this.url =
-      // "https://alxbdo.github.io/BidaudAlexandre_11_18102021/src/datas/logements.json";
-      "../datas/logements.json";
+    this.urlForHome = "./data/logements.json";
+    this.urlForAccommodation = "../data/logements.json";
   }
 
   getLogements() {
-    return fetch(this.url)
+    return fetch(this.urlForHome)
       .then((response) => response.json())
       .catch((error) => console.log(error));
   }
 
   getLogement(id) {
-    return fetch(this.url)
+    return fetch(this.urlForAccommodation)
       .then((response) => response.json())
       .then((data) => data.find((logement) => logement.id === id))
       .catch((error) => console.log(error));
