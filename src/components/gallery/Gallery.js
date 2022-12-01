@@ -2,12 +2,11 @@ import React, { useState, useEffect } from "react";
 import arrow from "../../../src/assets/icons/arrow.svg";
 
 const Gallery = ({ pictures }) => {
-  const [currentPicture, setCurrentPicture] = useState(pictures && pictures[0]);
+  const [currentPicture, setCurrentPicture] = useState([]);
 
   useEffect(() => {
-    // setCurrentPicture(pictures && pictures[0]);
-    console.log(currentPicture);
-  }, [currentPicture]);
+    setCurrentPicture(pictures && pictures[0]);
+  }, [pictures]);
 
   const ArrowNext = () => {
     const index = pictures.indexOf(currentPicture);
@@ -29,15 +28,7 @@ const Gallery = ({ pictures }) => {
 
   return (
     <div className="gallery">
-      <img
-        className="gallery__image"
-        src={
-          (pictures && currentPicture) || currentPicture === pictures
-            ? currentPicture
-            : pictures[0]
-        }
-        alt="bannière"
-      />
+      <img className="gallery__image" src={currentPicture} alt="bannière" />
       {pictures && pictures.length > 1 ? (
         <div className="box-arrow">
           <img
