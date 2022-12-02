@@ -13,7 +13,13 @@ export default class ApiServices {
   getLogement(id) {
     return fetch(this.urlForAccommodation)
       .then((response) => response.json())
-      .then((data) => data.find((logement) => logement.id === id))
+      .then((data) => {
+        const logement = data.find((logement) => logement.id === id);
+        if (!logement) {
+          window.location.href = "/404";
+        }
+        return logement;
+      })
       .catch((error) => console.log(error));
   }
 }
